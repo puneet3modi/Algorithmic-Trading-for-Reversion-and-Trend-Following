@@ -9,7 +9,7 @@ import yaml
 sys.path.append(os.path.abspath("."))
 
 from src.common.logging import setup_logger
-from src.data.fetch_klines import make_output_paths  # your CSV path helper
+from src.data.fetch_klines import make_output_paths
 from src.indicators.macd import MACDParams, macd
 
 

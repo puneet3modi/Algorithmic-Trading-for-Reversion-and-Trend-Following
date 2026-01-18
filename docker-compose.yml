@@ -1,0 +1,11 @@
+services:
+  cqf:
+    build: .
+    container_name: cqf_algo
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    working_dir: /app
+    command: bash -lc "make pipeline"
+    

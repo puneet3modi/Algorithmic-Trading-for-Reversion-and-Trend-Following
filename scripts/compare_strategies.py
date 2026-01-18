@@ -71,7 +71,7 @@ def main() -> None:
     paths = [
         (p_macd, "Trend 1: MACD + Regime"),
         (p_ema_ratio, "Trend 2: EMA Ratio"),
-        (p_reversion_vwap, "Reversion: VWAP (LOCKED)"),
+        (p_reversion_vwap, "Reversion: VWAP"),
         (p_ml, "Alt: ML Classifier (Stacking)"),
     ]
 

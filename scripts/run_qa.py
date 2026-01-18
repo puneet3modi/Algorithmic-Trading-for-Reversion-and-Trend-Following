@@ -50,7 +50,7 @@ def main() -> None:
     qa_summary_path = f"{processed_dir}/qa_summary_{symbol}_{interval}.csv"
     summary_df.to_csv(qa_summary_path, index=False)
 
-    logger.info(f"Saved processed parquet: {processed_path}")
+    logger.info(f"Saved processed CSV: {processed_path}")
     logger.info(f"Saved QA summary: {qa_summary_path}")
     logger.info(f"QA summary: {summary}")
 

@@ -13,6 +13,30 @@ paths:
 
 qa:
   expected_interval_minutes: 15
-  max_abs_log_return: 0.35       # flag if |logret| > this (very conservative for 15m)
+  max_abs_log_return: 0.35       # flag if |logret| > this
   outlier_rolling_window: 96     # ~ 1 day of 15m bars
   outlier_sigma: 10.0            # flag if |logret| > sigma * rolling_std
+
+broker:
+  name: "binance"
+  venue: "binance_spot_testnet"
+  use_testnet: true
+
+  # Base URLs
+  base_url_spot: "https://testnet.binance.vision"
+  base_url_futures: "https://testnet.binancefuture.com"
+
+  # HTTP / signing params
+  recv_window_ms: 5000
+  timeout_s: 10
+
+live:
+  symbol: "BTCUSDT"
+  interval: "15m"
+  loop_sleep_seconds: 30        # how often to check (cron-like polling is OK)
+  order_notional_usdt: 50       # small sizing
+  far_bps: 500                  # 500 bps away from market => should NOT fill
+  max_open_orders: 3
+  cancel_stale_after_minutes: 30
+  reconcile_every_n_loops: 1     # query account every loop (safe, testnet)
+  min_notional_usdt: 5.0         # used for shadow position threshold
