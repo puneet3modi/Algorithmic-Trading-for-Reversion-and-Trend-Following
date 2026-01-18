@@ -16,4 +16,3 @@ COPY . .
 
 # Default: show help
 CMD ["bash", "-lc", "python --version && ls -la && echo 'Container ready. Use Makefile targets.'"]
-# Example to run live loop on testnet:
