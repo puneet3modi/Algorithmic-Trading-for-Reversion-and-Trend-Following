@@ -90,4 +90,4 @@ def annualized_sharpe(returns: pd.Series, bars_per_year: float) -> float:
     sig = r.std(ddof=1)
     if sig == 0:
         return float("nan")
-    return float((mu / sig) * np.sqrt(bars_per_year)) # annualized Sharpe ratio
+    return float((mu / sig) * np.sqrt(bars_per_year))
