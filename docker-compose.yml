@@ -8,4 +8,5 @@ services:
       - .env
     working_dir: /app
     command: bash -lc "make pipeline"
-    
+    depends_on:
+      - mongo
