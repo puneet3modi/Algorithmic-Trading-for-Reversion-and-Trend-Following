@@ -63,4 +63,7 @@ checklist:
 	python scripts/reconcile_once_testnet.py
 	python scripts/live_loop_testnet.py --once
 	python scripts/report_risk_dashboard.py --all
+	python scripts/make_report_plots.py
 	
+plots:
+	python scripts/make_report_plots.py
