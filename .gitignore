@@ -35,4 +35,3 @@ config/secrets.yaml
 .pytest_cache/
 .coverage
 htmlcov/
-.tox/
