@@ -3,28 +3,35 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.so
 *.egg-info/
 dist/
 build/
 
-# Environments
+# venv
 .venv/
 venv/
-ENV/
-env/
 
-# OS / editor
+# OS / IDE
 .DS_Store
 .vscode/
-.ipynb_checkpoints/
+.idea/
 
-# Data & outputs
-data/
-reports/
+# Data + outputs
+data/raw/
+data/processed/
+data/live/
 *.parquet
 *.csv
 *.log
 
 # Secrets
 .env
+.env.*
+config/secrets.yaml
+**/*secret*
+**/*key*
+
+# Tests cache
+.pytest_cache/
+.coverage
+htmlcov/
