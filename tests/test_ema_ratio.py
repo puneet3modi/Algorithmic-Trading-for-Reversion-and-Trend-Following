@@ -22,3 +22,4 @@ def test_ema_ratio_trend_positions_basic():
     
     assert pos.max() == 1
     assert pos.min() == -1
+#   Expect entry at index 3 (2 bars above 0.001), exit at index 5 (<=0.0004),
