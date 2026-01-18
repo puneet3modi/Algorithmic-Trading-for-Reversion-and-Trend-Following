@@ -39,4 +39,4 @@ live:
   max_open_orders: 3
   cancel_stale_after_minutes: 30
   reconcile_every_n_loops: 1     # query account every loop (safe, testnet)
-  min_notional_usdt: 5.0         # used for shadow position thresholds
+  min_notional_usdt: 5.0         # used for shadow position threshold
