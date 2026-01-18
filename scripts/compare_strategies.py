@@ -94,4 +94,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main() # Run the comparison
+    main()
